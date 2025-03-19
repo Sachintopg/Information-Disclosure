@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+}
+
+.intro, .latest {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.challenge-card {
+    background: #e0f2f1;
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.challenge-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
