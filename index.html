@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Challenge - Information Disclosure</title>
-    <script src="download.js"></script>
 </head>
 <body>
-    <h1>Welcome to the CTF Challenge!</h1>
-    <p>Find the hidden flag in our files...</p>
+    <h1>CTF Challenge - Information Disclosure</h1>
+    <p>If the file doesn't download automatically, <a href="env.txt" download>click here</a>.</p>
 
-    <!-- This will not be visible, but players who check the source code will find it -->
-    <a href="env.txt" style="display: none;">Secret File</a>
+    <script>
+        window.onload = function() {
+            const a = document.createElement('a');
+            a.href = 'env.txt';
+            a.download = '.env';  // Force download as .env file
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        };
+    </script>
 </body>
 </html>
